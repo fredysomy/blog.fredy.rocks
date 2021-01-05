@@ -1,0 +1,15 @@
+import React,{Component} from 'react'
+
+import {Link} from 'react-router-dom';
+
+export default class Blogview extends Component{
+
+  render(){
+    return(
+      <div>
+    Hiiiiii
+      </div>
+    )
+  }
+
+}
