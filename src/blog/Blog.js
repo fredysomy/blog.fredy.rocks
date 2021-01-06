@@ -16,7 +16,7 @@ export default class Blog extends Component{
     return(
       <div>
       <Link to="/asd">Hiii</Link>
-      {this.state.blog}
+      {this.state.blog[1]}
       </div>
     )
   }
