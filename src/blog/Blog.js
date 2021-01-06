@@ -1,24 +1,45 @@
-import React,{Component} from 'react'
-
+import React,{Component,useEffect,useState} from 'react'
+import superagent from 'superagent';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-export default class Blog extends Component{
- state={
-     blog:[]
- }
- componentWillMount() {
-    axios.get('https://dev.to/api/articles/me/published',{ headers :{ "api-key":"e7wq9EdnLxhWvMGzP75kLAYD"},})
-    .then(res =>{
-        console.log(res)
+const Blog =()=> {
+    const getPosts = async () => {
+  const DEV_TO_URL = "https://o6ippn.deta.dev/id"
+
+  try {
+    const result = superagent
+      .get(DEV_TO_URL)
+      
+      .then(res => {
+        return res.body
+      })
+    return result
+  } catch (error) {
+    console.log("WE HAVE FETCH POST ERROR", error)
+  }
+}
+  const [posts ,setPosts]=useState([]);
+  const [loading ,setLoading] =useState(false);
+
+    useEffect(()=> {
+    getPosts().then(data=>{
+        setPosts(data)
     })
- }
-  render(){
+    
+ },[]);
+
     return(
       <div>
-      <Link to="/asd">Hiii</Link>
+     {posts.map(data => {
+         return(
+             <div>
+         <h5>{data.title}</h5>
+     <Link params={data.id} to={`/${data.id}`}>{data.id}</Link>
+         </div>
+         )
+     })}
       
       </div>
-    )
-  }
-
-}
+    );
+  };
+export default Blog;

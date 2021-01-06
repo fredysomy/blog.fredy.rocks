@@ -1,15 +1,16 @@
 import React,{Component} from 'react'
 
 import {Link} from 'react-router-dom';
+const Blogview =() =>{
 
-export default class Blogview extends Component{
 
-  render(){
     return(
       <div>
-    Hiiiiii
+ {this.props.match.params.id}
       </div>
     )
-  }
+  
 
 }
+
+export default Blogview;
