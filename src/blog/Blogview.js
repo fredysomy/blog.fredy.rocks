@@ -6,7 +6,7 @@ const Blogview =() =>{
 
     return(
       <div>
- {console.log(this)}
+ {window.location.pathname.slice(1)}
       </div>
     )
   
