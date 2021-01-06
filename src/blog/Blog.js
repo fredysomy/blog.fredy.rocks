@@ -7,7 +7,7 @@ export default class Blog extends Component{
      blog:[]
  }
  componentWillMount() {
-    axios.get('https://dev.to/api/articles/me/published',{'headers':{"api-key":"e7wq9EdnLxhWvMGzP75kLAYD"}})
+    axios.get('https://dev.to/api/articles/me/published',{ headers :{ "api-key":"e7wq9EdnLxhWvMGzP75kLAYD"},})
     .then(res =>{
         this.setState(res)
     })
