@@ -6,7 +6,7 @@ const Blogview =() =>{
 
     return(
       <div>
- {this.props.match.params.id}
+ {console.log(this)}
       </div>
     )
   
