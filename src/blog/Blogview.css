@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Indie+Flower&family=Nunito:ital,wght@0,200;0,800;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+#blogcontents{
+text-align: left !important;
+width:50%;
+margin:5% auto;
+}
+
+@media all and (max-width:700px){
+    #blogcontents{
+        text-align: left !important;
+        width:100%;
+margin:5% auto;
+    }
+}

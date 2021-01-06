@@ -2,6 +2,7 @@ import React,{Component,useEffect,useState} from 'react'
 import superagent from 'superagent';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import './Blog.css';
 const Blog =()=> {
     const getPosts = async () => {
   const DEV_TO_URL = "https://o6ippn.deta.dev/id"
@@ -29,13 +30,27 @@ const Blog =()=> {
  },[]);
 
     return(
-      <div>
+     <div id="main">
      {posts.map(data => {
          return(
-             <div>
-         <h5>{data.title}</h5>
-     <Link params={data.id} to={`/${data.id}`}>{data.id}</Link>
-         </div>
+             <div className="maindiv">
+                  
+                <img className="img-div" src={data.cover_image}/>
+             
+                <div className="content-div">
+                        <h3>
+                            {data.title}
+                        </h3>
+                        <hr/>
+                        <p>
+                            {data.description}
+                        </p>
+                        <Link to={`/${data.slug}`}><button class="btn btn-primary">Read More</button></Link>
+                        
+                       
+                        
+                </div>
+            </div>
          )
      })}
       
@@ -43,3 +58,10 @@ const Blog =()=> {
     );
   };
 export default Blog;
+
+
+
+
+               
+           
+                
