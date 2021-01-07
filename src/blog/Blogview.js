@@ -25,6 +25,13 @@ const Blogview =() =>{
                 document.getElementById("blogcontents").innerHTML=data.body_html.replace(/[\r]+/gm, "" );
             })
     },[]);
+     function ScrollToTopOnMount() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
     
     return(
      <div class="crayons-article__main">
