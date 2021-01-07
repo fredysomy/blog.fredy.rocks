@@ -2,11 +2,12 @@ html
 {
     margin:0;
     padding: 0;
+    background-color: #1e2333 !important;
 }
 
 .App {
   text-align: center;
-  background-color: #2c3041;
+  background-color: #1e2333 !important;
  margin:0 0;
   
 }

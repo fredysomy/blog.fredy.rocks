@@ -41,7 +41,7 @@ const Blog =()=> {
                         <h3>
                             {data.title}
                         </h3>
-                        <hr/>
+                    
                         <p>
                             {data.description}
                         </p>
