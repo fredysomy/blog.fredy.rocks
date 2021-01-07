@@ -10,8 +10,9 @@ const Blog =()=> {
   try {
     const result = superagent
       .get(DEV_TO_URL)
-      
+      .then(setLoading(true))
       .then(res => {
+          
         return res.body
       })
     return result
@@ -28,6 +29,7 @@ const Blog =()=> {
     })
     
  },[]);
+
 
     return(
      <div id="main">
@@ -56,6 +58,7 @@ const Blog =()=> {
       
       </div>
     );
+
   };
 export default Blog;
 

@@ -36,8 +36,13 @@ const Blogview =() =>{
     return(
      <div class="crayons-article__main">
         <div class="crayons-article__body text-styles spec__body" data-article-id="563642" id="article-body">
+            <div id="imgcontents">
+      <img id="imgscrc" src={blog.cover_image}></img>
+      <h1 style={{color:'white',textAlign:'left'}}><b>{blog.title}</b></h1>
+      </div>
+    
       <div  id="blogcontents">
-
+            
       </div>
 </div>
 </div>

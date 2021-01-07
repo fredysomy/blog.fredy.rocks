@@ -27,11 +27,11 @@ export default class Header extends Component{
         <a href="https://projects.fredy.rocks/" class="nav-link">Projects</a>
       </li>
       
-      <Link to="/downloads">
+      
        <li id="abc" class="nav-item">
-        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Downloads</a>
+        <a class="nav-link" href="https://blog.fredy.rocks/">Blogs</a>
       </li>
-      </Link>
+      
        <li id="abc" class="nav-item">
         <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
       </li>

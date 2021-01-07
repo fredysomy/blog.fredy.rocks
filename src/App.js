@@ -11,11 +11,14 @@ function App() {
      
           <Switch>
               <Route exact path="/">
-                  <Header></Header>
-                  <Blog></Blog>
+                  <Header/>
+                  <Blog/>
                   
                   </Route>
-               <Route exact path="/:id" component={Blogview} />
+               <Route exact path="/:id">
+                   <Header/>
+                   <Blogview/>
+               </Route>
           </Switch>
       </div>
     </Router>
