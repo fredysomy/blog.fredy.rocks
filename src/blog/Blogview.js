@@ -27,9 +27,13 @@ const Blogview =() =>{
     },[]);
     
     return(
+     <div class="crayons-article__main">
+        <div class="crayons-article__body text-styles spec__body" data-article-id="563642" id="article-body">
       <div  id="blogcontents">
 
       </div>
+</div>
+</div>
     )
   
 
