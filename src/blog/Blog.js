@@ -10,18 +10,18 @@ const Blog =()=> {
   try {
     const result = superagent
       .get(DEV_TO_URL)
-      .then(setLoading(true))
+      
       .then(res => {
           
         return res.body
-      })
+      }).then(setLoading(false))
     return result
   } catch (error) {
     console.log("WE HAVE FETCH POST ERROR", error)
   }
 }
   const [posts ,setPosts]=useState([]);
-  const [loading ,setLoading] =useState(false);
+  const [loading ,setLoading] =useState(true);
 
     useEffect(()=> {
     getPosts().then(data=>{
@@ -33,7 +33,7 @@ const Blog =()=> {
 
     return(
      <div id="main">
-     {posts.map(data => {
+     {loading ? <h1 style={{color:'red'}}>Loading</h1> : posts.map(data => {
          return(
              <div className="maindiv">
                   
