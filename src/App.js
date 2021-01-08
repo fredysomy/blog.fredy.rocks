@@ -8,15 +8,15 @@ function App() {
   return(
        <Router>
       <div className="App">
-     
+       <Header/>
           <Switch>
               <Route exact path="/">
-                  <Header/>
+                 
                   <Blog/>
                   
                   </Route>
                <Route exact path="/:id">
-                   <Header/>
+                 
                    <Blogview/>
                </Route>
           </Switch>

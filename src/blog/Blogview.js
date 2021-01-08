@@ -26,12 +26,15 @@ const Blogview =() =>{
             })
     },[]);
      function ScrollToTopOnMount() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
-  return null;
-}
+    window.scrollTo(0, 0);
+  };
+  function gotop(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+
+  
+
     
     return(
      <div class="crayons-article__main">
@@ -44,6 +47,7 @@ const Blogview =() =>{
       <div  id="blogcontents">
             
       </div>
+     
 </div>
 </div>
     )
