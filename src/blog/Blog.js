@@ -33,7 +33,7 @@ const Blog =()=> {
 
     return(
      <div id="main">
-     {loading ? <h1 style={{color:'red'}}>Loading</h1> : posts.map(data => {
+     {posts.map(data => {
          return(
              <div className="maindiv">
                   
