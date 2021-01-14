@@ -2,6 +2,7 @@ import React,{Component,useState,useEffect} from 'react'
 import superagent from 'superagent';
 import './Blogview.css';
 import {Link} from 'react-router-dom';
+import {Helmet} from "react-helmet";
 const Blogview =() =>{
     const getBlog = async () => {
     const DEV_TO_URL = `https://dev.to/api/articles/fredysomy/${window.location.pathname.slice(1)}`
@@ -37,7 +38,11 @@ const Blogview =() =>{
 
     
     return(
+        
      <div class="crayons-article__main">
+         <Helmet>
+    <title>{blog.title}</title>
+        </Helmet>
         <div class="crayons-article__body text-styles spec__body" data-article-id="563642" id="article-body">
             <div id="imgcontents">
       <img id="imgscrc" src={blog.cover_image}></img>
