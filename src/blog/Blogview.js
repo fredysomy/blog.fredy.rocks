@@ -41,14 +41,20 @@ const Blogview =() =>{
         
      <div class="crayons-article__main">
          <Helmet>
-    <title>{blog.title}</title>
+    <title data-react-helmet="true">{blog.title}</title>
         </Helmet>
         <div class="crayons-article__body text-styles spec__body" data-article-id="563642" id="article-body">
             <div id="imgcontents">
       <img id="imgscrc" src={blog.cover_image}></img>
+     
       <h1 style={{color:'white',textAlign:'left'}}><b>{blog.title}</b></h1>
-      </div>
-    
+   <div style={{display:'flex',flexDirection:'colomn'}}>
+  
+      <a href=""><button  style={{margin:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></button></a>
+      <a href=""><button  style={{margin:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-linkedin-in"></i></button></a>
+      <a href=""><button  style={{margin:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-whatsapp"></i></button></a>
+</div>
+    </div>
       <div  id="blogcontents">
             
       </div>
