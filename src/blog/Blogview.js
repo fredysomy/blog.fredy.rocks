@@ -54,7 +54,7 @@ const Blogview =() =>{
    <div id="scialshare" style={{display:'flex',flexDirection:'colomn'}}>
   <a href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=${blog.title}`}><button  style={{ marginLeft:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></button></a>
       <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${blog.title}&summary=${blog.description}&source=`}><button  style={{ marginLeft:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-linkedin-in"></i></button></a>
-      <a href={`https://api.whatsapp.com/send?text=${blog.title}${window.location.href}`}><button  style={{ marginLeft:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-whatsapp"></i></button></a>
+      <a href={`https://api.whatsapp.com/send?text=${blog.title},${window.location.href}`}><button  style={{ marginLeft:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-whatsapp"></i></button></a>
       
 </div>
     </div>
