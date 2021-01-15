@@ -13,6 +13,7 @@ const Blogview =() =>{
       .then(res => {
         return res.body
         })
+        
         return blog
         } catch (error) {
         console.log("WE HAVE FETCH POST ERROR", error)
@@ -22,7 +23,7 @@ const Blogview =() =>{
     useEffect(()=>{
             getBlog().then(data =>{
                 setBlog(data);
-                
+                document.title=data.title;
                 document.getElementById("blogcontents").innerHTML=data.body_html.replace(/[\r]+/gm, "" );
             })
     },[]);
@@ -40,9 +41,7 @@ const Blogview =() =>{
     return(
         
      <div class="crayons-article__main">
-         <Helmet>
-    <title data-react-helmet="true">{blog.title}</title>
-        </Helmet>
+         
         <div class="crayons-article__body text-styles spec__body" data-article-id="563642" id="article-body">
             <div id="imgcontents">
       <img id="imgscrc" src={blog.cover_image}></img>
@@ -50,9 +49,9 @@ const Blogview =() =>{
       <h1 style={{color:'white',textAlign:'left'}}><b>{blog.title}</b></h1>
    <div style={{display:'flex',flexDirection:'colomn'}}>
   
-      <a href=""><button  style={{margin:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></button></a>
-      <a href=""><button  style={{margin:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-linkedin-in"></i></button></a>
-      <a href=""><button  style={{margin:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-whatsapp"></i></button></a>
+      <a href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=${blog.title}`}><button  style={{ marginLeft:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></button></a>
+      <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${blog.title}&summary=${blog.description}&source=`}><button  style={{ marginLeft:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-linkedin-in"></i></button></a>
+      <a href={`https://api.whatsapp.com/send?text=${blog.title}${window.location.href}`}><button  style={{ marginLeft:'5px'}} className="btn btn-outline-primary btn-sm"><i class="fab fa-whatsapp"></i></button></a>
 </div>
     </div>
       <div  id="blogcontents">
