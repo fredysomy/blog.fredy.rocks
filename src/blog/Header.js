@@ -9,7 +9,7 @@ export default class Header extends Component{
       <div>
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a id="Head" class="navbar-brand" href="#">
-   <img src="https://www.dropbox.com/s/3h2o5hlee2f912f/20201230_220327_0000-removebg-preview.png?dl=1" width="40" height="40" alt="" />
+   <img src="https://raw.githubusercontent.com/fredysomy/PersonalSite/master/reqwerwewwe-removebg-preview.png" width="40" height="40" alt="" />
 <font color="cyan">Fredy Somy</font></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
