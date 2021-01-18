@@ -1,39 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Indie+Flower&family=Nunito:ital,wght@0,200;0,800;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Indie+Flower&family=Nunito:ital,wght@0,200;0,800;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-
-#blogcontents{
-text-align: left !important;
-width:60%;
-margin:5% auto;
-color:white;
-
+#blogcontents {
+  text-align: left !important;
+  width: 60%;
+  margin: 5% auto;
+  color: white;
 }
-#imgcontents{
-    width:60%;
-    margin:0 auto;
-    
+#imgcontents {
+  width: 60%;
+  margin: 0 auto;
 }
-#top{
-    z-index:3;
-    width: 50px;
-    height:50px;
-    position: fixed;
-    background-color: white;
-    border-radius: 50%;
-    bottom:2%;
-    right:3%;
-    background-color: red;
-    color:white;
-
+#top {
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 2%;
+  right: 3%;
+  background-color: red;
+  color: white;
 }
-@media all and (max-width:900px){
-    #blogcontents{
-        text-align: left !important;
-        width:100%;
-margin:5% auto;
-    }
-    #imgcontents{
-        width:100%;
-    }
+@media all and (max-width: 900px) {
+  #blogcontents {
+    text-align: left !important;
+    width: 100%;
+    margin: 5% auto;
+  }
+  #imgcontents {
+    width: 100%;
+  }
 }

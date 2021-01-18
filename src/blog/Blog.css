@@ -1,85 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Indie+Flower&family=Nunito:ital,wght@0,200;0,800;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-*{
-    margin:0;
-    padding:0;
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Indie+Flower&family=Nunito:ital,wght@0,200;0,800;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
-#main{
-    margin:0 auto !important;
-background-color: #1e2333 !important;
-    
+#main {
+  margin: 0 auto !important;
+  background-color: #1e2333 !important;
 }
 
-#head{
-    font-family: 'Comfortaa', cursive;
-    color:white;
-    margin-bottom: 5%;
+#head {
+  font-family: "Comfortaa", cursive;
+  color: white;
+  margin-bottom: 5%;
 }
 
-.maindiv{
-    width:80vw;
-    height:fit-content;
-    background-color: #3a415e;
-    display: flex;
-    flex-direction: row !important;
-    margin:3% auto !important;
-    border-radius:10px;
-    background: #1e2333;
-box-shadow:  3px 3px 9px #0c0e14,
-             -4px -3px 9px #303852;
-    
-   
+.maindiv {
+  width: 80vw;
+  height: fit-content;
+  background-color: #3a415e;
+  display: flex;
+  flex-direction: row !important;
+  margin: 3% auto !important;
+  border-radius: 10px;
+  background: #1e2333;
+  box-shadow: 3px 3px 9px #0c0e14, -4px -3px 9px #303852;
 }
 
-.img-div{
-   width:45%;
+.img-div {
+  width: 45%;
 
-    margin:2%;
-
-
+  margin: 2%;
 }
-.content-div{
-   margin: 2%;
-    height:90%;
-    width: 30%;
-    text-align: left;
-    color: white;
-     font-family: 'Nanum Gothic', sans-serif;
-   
-   
+.content-div {
+  margin: 2%;
+  height: 90%;
+  width: 30%;
+  text-align: left;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
 }
-span{
-    background-color: ash;
-    padding:0;
-    border-radius: 3px;
+span {
+  background-color: ash;
+  padding: 0;
+  border-radius: 3px;
 }
-#tech{
-    background-color: rgb(129, 120, 120);
-    width:fit-content;
-    border-radius: 5px;
-    padding:2px;
-    color:white;
-    
+#tech {
+  background-color: rgb(129, 120, 120);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 2px;
+  color: white;
 }
-.bttn{
-    margin-right:1%;
+.bttn {
+  margin-right: 1%;
 }
-@media all and (max-width:700px){
-    .maindiv{
-        flex-direction: column !important;
-        width:90%;
-        border-radius: 10px;
-        margin:4% auto;
-    }
-    .img-div{
-        margin:2% auto;
-        width:90%;
-    }
-     .content-div{
-        width:90%;
-         margin:2% auto;
-    }
+@media all and (max-width: 700px) {
+  .maindiv {
+    flex-direction: column !important;
+    width: 90%;
+    border-radius: 10px;
+    margin: 4% auto;
+  }
+  .img-div {
+    margin: 2% auto;
+    width: 90%;
+  }
+  .content-div {
+    width: 90%;
+    margin: 2% auto;
+  }
 }
