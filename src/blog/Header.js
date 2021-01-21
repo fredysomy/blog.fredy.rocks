@@ -51,8 +51,7 @@ export default class Header extends Component {
               <li id="abc" class="nav-item">
                 <a
                   class="nav-link"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
+                  href="https://contact.fredy.rocks/"
                 >
                   Contact
                 </a>
