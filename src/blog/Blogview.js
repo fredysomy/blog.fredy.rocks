@@ -39,9 +39,7 @@ const Blogview = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
+
   return (
     <div class="crayons-article__main">
       <div
