@@ -88,8 +88,9 @@ const Blogview = () => {
               </button>
             </a>
           </div>
-         <div id="google_translate_element"></div>
+         
         </div>
+<div id="google_translate_element"></div>
         <div id="blogcontents"></div>
       </div>
     </div>
