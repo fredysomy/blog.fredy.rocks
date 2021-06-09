@@ -5,7 +5,7 @@ import axios from "axios";
 import "./Blog.css";
 const Blog = () => {
   const getPosts = async () => {
-    const DEV_TO_URL = "https://o6ippn.deta.dev/id";
+    const DEV_TO_URL = "https://proxpiapi.herokuapp.com/proxpi/api/coux7u2mqd27";
 
     try {
       const result = superagent
