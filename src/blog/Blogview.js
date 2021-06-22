@@ -30,6 +30,8 @@ const Blogview = () => {
         "blogcontents"
       ).innerHTML = data.body_html.replace(/[\r]+/gm, "");
       window.scrollTo(0, 0);
+      window.location.href+="#googtrans(|bn)
+      window.location.reload()
     });
   }, []);
   function ScrollToTopOnMount() {
