@@ -26,7 +26,7 @@ const Blog = () => {
   useEffect(() => {
     getPosts().then((data) => {
       setPosts(data);
-      window.location.href+="#googtrans(|bn)"
+     
     });
   }, []);
 
